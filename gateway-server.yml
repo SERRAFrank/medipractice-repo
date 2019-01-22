@@ -4,3 +4,26 @@ eureka:
             defaultZone: http://localhost:9102/eureka/
 server:
     port: 9004
+
+spring:
+    datasource:
+        initialization-mode: always
+        password: 123456
+        url: jdbc:postgresql://localhost:5432/medipractice
+        username: postgres
+    jpa:
+        hibernate:
+            ddl-auto: create
+        properties:
+            hibernate:
+                dialect: org.hibernate.dialect.PostgreSQLDialect
+                jdbc:
+                    lob:
+                        non_contextual_creation: true
+
+sgs:
+    security:
+        jwt:
+            authority:
+                key: GUx0KqNMPbHluHrg5gm4SyRUx5XtWl2p
+            secret: JtgIflaD4LJ4DXNwXXHqxnxycwfpMzDc

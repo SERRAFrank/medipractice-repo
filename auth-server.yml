@@ -4,7 +4,6 @@ eureka:
             defaultZone: http://localhost:9102/eureka/
 server:
     port: 8888
-
 spring:
     datasource:
         initialization-mode: always
@@ -20,8 +19,3 @@ spring:
                 jdbc:
                     lob:
                         non_contextual_creation: true
-
-oauth2:
-    client:
-        id: versusmind
-        secret: $2a$04$kb4dXtrYH36C/55P0QBEcu9QGtOqUniXB.Kp2pcYaSZdOfrTBeqvO

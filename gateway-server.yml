@@ -7,10 +7,10 @@ server:
 
 
 zuul :
-    ignored-services:*
-
+    ignored-services: *
     routes:
-        auth-service: path:/auth/**
-            service-id: auth-server
+        auth-service:
+            path: /auth/**
+            sensitive-headers: 'Cookie,Set-Cookie'
+            service-id: AUTH-SERVICE
             strip-prefix: false
-            sensitive-headers: Cookie,Set-Cookie

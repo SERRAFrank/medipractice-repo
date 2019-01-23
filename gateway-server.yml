@@ -3,4 +3,11 @@ eureka:
         serviceUrl:
             defaultZone: http://localhost:9102/eureka/
 server:
-    port: 9004
+    port: 8888
+
+zuul :
+    routes:
+        auth-service: path:/auth/**
+            service-id: auth-server
+            strip-prefix: false
+            sensitive-headers: 'Cookie,Set-Cookie'

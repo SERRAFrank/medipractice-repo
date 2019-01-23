@@ -21,6 +21,19 @@ spring:
                     lob:
                         non_contextual_creation: true
 
+    redis:
+        database: 1
+        host: 192.168.0.12
+        password: ''
+        pool:
+            max-active: 8
+            max-idle: 8
+            max-wait: -1
+            min-idle: 0
+        port: 6379
+        timeout: 0
+
+
 oauth2:
     client:
         id: versusmind

@@ -20,6 +20,9 @@ spring:
                 jdbc:
                     lob:
                         non_contextual_creation: true
+    user:
+        name: azerty
+        password: azerty
 
 oauth2:
     client:

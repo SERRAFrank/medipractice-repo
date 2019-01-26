@@ -8,7 +8,7 @@ server:
 
 zuul:
     routes:
-        auth-service:
+        auth-server:
             path: /auth/**
             sensitive-headers: 'Cookie,Set-Cookie'
             service-id: auth-server

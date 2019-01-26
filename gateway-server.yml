@@ -6,8 +6,7 @@ server:
     port: 9004
 
 
-zuul :
-    ignored-services: *
+zuul:
     routes:
         auth-service:
             path: /auth/**
